@@ -1,0 +1,51 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/BoxItem.css" rel="stylesheet" />
+    <link href="~/Scripts/stylesheets/jquery.sidr.dark.css" rel="stylesheet" />
+    <link href="~/Scripts/stylesheets/jquery.sidr.light.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-ui-1.8.24.js"></script>
+    <script src="~/Scripts/jquery.sidr.min.js"></script>
+    <title>Index</title>
+</head>
+<body>Sc
+    <a id="simple-menu" class="btn">
+        <span class="glyphicon glyphicon-align-justify"></span>
+    </a>
+    <div id="sidr">
+        <!-- Your content -->
+        <div class="Item">
+            <img src="~/Content/Images/librozafon.jpg" class="img-responsive" alt="Responsive image" width="80" height="90" />
+        </div>
+        <div class="Item">
+            <img src="~/Content/Images/cama.jpg" class="img-responsive" />
+        </div>
+        <div class="Item">
+            <img src="~/Content/Images/fifa-14-ps3.jpg" class="img-responsive" />
+        </div>
+    </div>
+    <div class="itemaTrocar">
+        <img src="~/Content/Images/librozafon.jpg" class="img-responsive" alt="Responsive image" width="80" height="90" />
+
+    </div>
+    <div class="itemsOfrecidos">
+        <img src="~/Content/Images/librozafon.jpg" class="img-responsive" alt="Responsive image" width="80" height="90" />
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#simple-menu').sidr();
+
+         
+        });
+    </script>
+</body>
+</html>
