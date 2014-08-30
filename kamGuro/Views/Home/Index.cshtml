@@ -1,51 +1,122 @@
-﻿@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <script src="~/Scripts/jquery-1.9.1.js"></script>
-    <script src="~/Scripts/bootstrap.js"></script>
-    <link href="~/Content/bootstrap.css" rel="stylesheet" />
-    <link href="~/Content/BoxItem.css" rel="stylesheet" />
-    <link href="~/Scripts/stylesheets/jquery.sidr.dark.css" rel="stylesheet" />
-    <link href="~/Scripts/stylesheets/jquery.sidr.light.css" rel="stylesheet" />
-    <script src="~/Scripts/jquery-ui-1.8.24.js"></script>
-    <script src="~/Scripts/jquery.sidr.min.js"></script>
-    <title>Index</title>
+    <meta charset="utf-8">
+    <title>Kamguro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+    <!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+    <!--script src="js/less-1.3.3.min.js"></script-->
+    <!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script src="~/Scripts/knockout-3.2.0.js"></script>
+    <script src="~/Scripts/ViewModels/BoxViewModel.js"></script>
 </head>
-<body>Sc
-    <a id="simple-menu" class="btn">
-        <span class="glyphicon glyphicon-align-justify"></span>
-    </a>
-    <div id="sidr">
-        <!-- Your content -->
-        <div class="Item">
-            <img src="~/Content/Images/librozafon.jpg" class="img-responsive" alt="Responsive image" width="80" height="90" />
-        </div>
-        <div class="Item">
-            <img src="~/Content/Images/cama.jpg" class="img-responsive" />
-        </div>
-        <div class="Item">
-            <img src="~/Content/Images/fifa-14-ps3.jpg" class="img-responsive" />
+<body>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-2 column">
+                <!-- ko foreach: BoxItems -->
+                <div>
+                    <input type="button" data-bind="value:$data.Description" />
+                </div>
+                <!-- /ko -->
+            </div>
+            <div class="col-md-10 column">
+                <div class="row clearfix">
+                    <div class="col-md-2 column">
+                    </div>
+                    <div class="col-md-8 column">
+                        <div class="row clearfix">
+                            <div class="col-md-4 column">
+                                <label>Buscar</label>
+                            </div>
+                            <div class="col-md-8 column">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 column">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img alt="300x200" src="http://lorempixel.com/600/200/people">
+                            <div class="caption">
+                                <h3>
+                                    Thumbnail label
+                                </h3>
+                                <p>
+                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                </p>
+                                <p>
+                                    <a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img alt="300x200" src="http://lorempixel.com/600/200/city">
+                            <div class="caption">
+                                <h3>
+                                    Thumbnail label
+                                </h3>
+                                <p>
+                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                </p>
+                                <p>
+                                    <a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img alt="300x200" src="http://lorempixel.com/600/200/sports">
+                            <div class="caption">
+                                <h3>
+                                    Thumbnail label
+                                </h3>
+                                <p>
+                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                </p>
+                                <p>
+                                    <a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="itemaTrocar">
-        <img src="~/Content/Images/librozafon.jpg" class="img-responsive" alt="Responsive image" width="80" height="90" />
-
-    </div>
-    <div class="itemsOfrecidos">
-        <img src="~/Content/Images/librozafon.jpg" class="img-responsive" alt="Responsive image" width="80" height="90" />
-    </div>
-    <script>
-        $(document).ready(function () {
-            $('#simple-menu').sidr();
-
-         
-        });
+    <script type="text/javascript">
+     var bIVm = new BoxViewModel();
+    ko.applyBindings(bIVm);
+    bIVm.GetItems();
     </script>
 </body>
+
+
 </html>
+

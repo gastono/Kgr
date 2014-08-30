@@ -13,7 +13,7 @@ namespace kamGuro.Controllers.Api
         private KamguroContext db = new KamguroContext();
         public List<Item> GetItems()
         {
-            return db.Items.Where(_ => _.User.ID == 1).ToList();
+            return db.Items.ToList();
         }
 
     }
