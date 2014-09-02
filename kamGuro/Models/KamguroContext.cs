@@ -19,6 +19,7 @@ namespace kamGuro.Models
 
         public DbSet<Item> Items { get; set; }
         public DbSet<ItemImage> ItemImages { get; set; }
+        public DbSet<Oferta> Ofertas { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

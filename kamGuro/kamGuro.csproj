@@ -141,11 +141,28 @@
     <Compile Include="Migrations\201408231922196_Se agrega la tabla Usuario y una columna usuario en la tabla item.Designer.cs">
       <DependentUpon>201408231922196_Se agrega la tabla Usuario y una columna usuario en la tabla item.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201409020157408_Entidad Oferta.cs" />
+    <Compile Include="Migrations\201409020157408_Entidad Oferta.Designer.cs">
+      <DependentUpon>201409020157408_Entidad Oferta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201409020200370_bla.cs" />
+    <Compile Include="Migrations\201409020200370_bla.Designer.cs">
+      <DependentUpon>201409020200370_bla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201409020202240_oferta.cs" />
+    <Compile Include="Migrations\201409020202240_oferta.Designer.cs">
+      <DependentUpon>201409020202240_oferta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201409020205260_offer.cs" />
+    <Compile Include="Migrations\201409020205260_offer.Designer.cs">
+      <DependentUpon>201409020205260_offer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\ItemImage.cs" />
     <Compile Include="Models\KamguroContext.cs" />
+    <Compile Include="Models\Oferta.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -261,6 +278,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201408231922196_Se agrega la tabla Usuario y una columna usuario en la tabla item.resx">
       <DependentUpon>201408231922196_Se agrega la tabla Usuario y una columna usuario en la tabla item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201409020157408_Entidad Oferta.resx">
+      <DependentUpon>201409020157408_Entidad Oferta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201409020200370_bla.resx">
+      <DependentUpon>201409020200370_bla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201409020202240_oferta.resx">
+      <DependentUpon>201409020202240_oferta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201409020205260_offer.resx">
+      <DependentUpon>201409020205260_offer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
