@@ -125,44 +125,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201408221144143_First Tables.cs" />
-    <Compile Include="Migrations\201408221144143_First Tables.Designer.cs">
-      <DependentUpon>201408221144143_First Tables.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201408221145080_Item.cs" />
-    <Compile Include="Migrations\201408221145080_Item.Designer.cs">
-      <DependentUpon>201408221145080_Item.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201408221146484_remove name from Item.cs" />
-    <Compile Include="Migrations\201408221146484_remove name from Item.Designer.cs">
-      <DependentUpon>201408221146484_remove name from Item.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201408231922196_Se agrega la tabla Usuario y una columna usuario en la tabla item.cs" />
-    <Compile Include="Migrations\201408231922196_Se agrega la tabla Usuario y una columna usuario en la tabla item.Designer.cs">
-      <DependentUpon>201408231922196_Se agrega la tabla Usuario y una columna usuario en la tabla item.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201409020157408_Entidad Oferta.cs" />
-    <Compile Include="Migrations\201409020157408_Entidad Oferta.Designer.cs">
-      <DependentUpon>201409020157408_Entidad Oferta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201409020200370_bla.cs" />
-    <Compile Include="Migrations\201409020200370_bla.Designer.cs">
-      <DependentUpon>201409020200370_bla.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201409020202240_oferta.cs" />
-    <Compile Include="Migrations\201409020202240_oferta.Designer.cs">
-      <DependentUpon>201409020202240_oferta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201409020205260_offer.cs" />
-    <Compile Include="Migrations\201409020205260_offer.Designer.cs">
-      <DependentUpon>201409020205260_offer.cs</DependentUpon>
+    <Compile Include="Migrations\201409030231217_refactor.cs" />
+    <Compile Include="Migrations\201409030231217_refactor.Designer.cs">
+      <DependentUpon>201409030231217_refactor.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\Item.cs" />
-    <Compile Include="Models\ItemImage.cs" />
+    <Compile Include="Models\Producto.cs" />
     <Compile Include="Models\KamguroContext.cs" />
-    <Compile Include="Models\Oferta.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -267,33 +237,12 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201408221144143_First Tables.resx">
-      <DependentUpon>201408221144143_First Tables.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201408221145080_Item.resx">
-      <DependentUpon>201408221145080_Item.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201408221146484_remove name from Item.resx">
-      <DependentUpon>201408221146484_remove name from Item.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201408231922196_Se agrega la tabla Usuario y una columna usuario en la tabla item.resx">
-      <DependentUpon>201408231922196_Se agrega la tabla Usuario y una columna usuario en la tabla item.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201409020157408_Entidad Oferta.resx">
-      <DependentUpon>201409020157408_Entidad Oferta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201409020200370_bla.resx">
-      <DependentUpon>201409020200370_bla.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201409020202240_oferta.resx">
-      <DependentUpon>201409020202240_oferta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201409020205260_offer.resx">
-      <DependentUpon>201409020205260_offer.cs</DependentUpon>
-    </EmbeddedResource>
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Index.cshtml" />
+    <EmbeddedResource Include="Migrations\201409030231217_refactor.resx">
+      <DependentUpon>201409030231217_refactor.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

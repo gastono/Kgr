@@ -7,13 +7,13 @@ namespace kamGuro.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.1-30610")]
-    public sealed partial class SeagregalatablaUsuarioyunacolumnausuarioenlatablaitem : IMigrationMetadata
+    public sealed partial class refactor : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(SeagregalatablaUsuarioyunacolumnausuarioenlatablaitem));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(refactor));
         
         string IMigrationMetadata.Id
         {
-            get { return "201408231922196_Se agrega la tabla Usuario y una columna usuario en la tabla item"; }
+            get { return "201409030231217_refactor"; }
         }
         
         string IMigrationMetadata.Source

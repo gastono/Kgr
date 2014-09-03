@@ -17,9 +17,9 @@ namespace kamGuro.Models
             this.Configuration.ProxyCreationEnabled = false;
         }
 
-        public DbSet<Item> Items { get; set; }
-        public DbSet<ItemImage> ItemImages { get; set; }
-        public DbSet<Oferta> Ofertas { get; set; }
+        public DbSet<Producto> Productos { get; set; }
+       
+        
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

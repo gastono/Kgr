@@ -11,9 +11,9 @@ namespace kamGuro.Controllers.Api
     public class ItemApiController : ApiController
     {
         private KamguroContext db = new KamguroContext();
-        public List<Item> GetItems()
+        public List<Producto> GetItems()
         {
-            return db.Items.ToList();
+            return db.Productos.ToList();
         }
 
     }
