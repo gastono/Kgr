@@ -129,10 +129,16 @@
     <Compile Include="Migrations\201409030231217_refactor.Designer.cs">
       <DependentUpon>201409030231217_refactor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201409040112496_OfertaYTrueque.cs" />
+    <Compile Include="Migrations\201409040112496_OfertaYTrueque.Designer.cs">
+      <DependentUpon>201409040112496_OfertaYTrueque.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Oferta.cs" />
     <Compile Include="Models\Producto.cs" />
     <Compile Include="Models\KamguroContext.cs" />
+    <Compile Include="Models\Trueque.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -242,6 +248,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201409030231217_refactor.resx">
       <DependentUpon>201409030231217_refactor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201409040112496_OfertaYTrueque.resx">
+      <DependentUpon>201409040112496_OfertaYTrueque.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

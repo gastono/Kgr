@@ -18,8 +18,8 @@ namespace kamGuro.Models
         }
 
         public DbSet<Producto> Productos { get; set; }
-       
-        
+        public DbSet<Oferta> Ofertas { get; set; }
+        public DbSet<Trueque> Trueques { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
