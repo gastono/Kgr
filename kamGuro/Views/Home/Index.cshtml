@@ -39,6 +39,45 @@
                     <input type="button" data-bind="value:$data.Description" />
                 </div>
                 <!-- /ko -->
+                <a class="btn btn-default btn-block" href="#modal-add" data-toggle="modal">Agregar</a>
+                <!--a-->
+                <div class="row clearfix">
+                    <div class="col-md-12 column">
+                        <div class="modal fade" id="modal-add" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h4 class="modal-title" id="myModalLabel">
+                                            Modal title
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- ko with: NewProduct -->
+                                        <form class="form-horizontal" role="form">
+                                            <div class="form-group">
+                                                <label for="inputEmail3" class="col-sm-2 control-label">Descripcion</label>
+                                                <div class="col-sm-10">
+                                                    <textarea data-bind="value:Description" class="form-control" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <!-- /ko -->
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                        <button type="button" data-bind="click:AddProduct" data-dismiss="modal" class="btn btn-primary">Guardar</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--b-->
             </div>
             <div class="col-md-10 column">
                 <div class="row clearfix">
@@ -111,9 +150,9 @@
         </div>
     </div>
     <script type="text/javascript">
-     var bIVm = new BoxViewModel();
-    ko.applyBindings(bIVm);
-    bIVm.GetItems();
+        var bIVm = new BoxViewModel();
+        ko.applyBindings(bIVm);
+        bIVm.GetItems();
     </script>
 </body>
 

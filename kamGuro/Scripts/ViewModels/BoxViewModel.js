@@ -3,7 +3,7 @@
     var self = this;
 
     self.BoxItems = ko.observableArray();
-    
+    self.NewProduct = ko.observable(new BoxItem());  
 
     self.GetItems = function ()
     {
@@ -28,7 +28,26 @@
                 });
             }           
         });
-    };       
+    };
+
+    self.AddProduct = function ()
+    {
+        var self = this;
+        
+        var requestData = ko.toJSON(self.NewProduct);
+
+        $.ajax('/api/ItemApi/AddItem', {
+            context: this,
+            type: 'POST',
+            contentType: 'application/json; charset=utf-8',
+            data: requestData,
+            success: function (data) {
+                console.log("succesful insertion");
+            }
+        });
+
+        self.NewProduct.Description('');
+    }   
 }
 
 var BoxItem = function ()
@@ -36,6 +55,5 @@ var BoxItem = function ()
     var self = this;
 
     self.ID = ko.observable();
-    self.Description = ko.observable();
-    self.Image = ko.observable();
+    self.Description = ko.observable();   
 }

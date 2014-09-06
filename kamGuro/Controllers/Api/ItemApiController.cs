@@ -16,5 +16,15 @@ namespace kamGuro.Controllers.Api
             return db.Productos.ToList();
         }
 
+        public HttpResponseMessage AddItem([FromBody]Producto data)
+        {
+            data.UserID = 1;
+
+            db.Productos.Add(data);
+
+            db.SaveChanges();
+
+            return new HttpResponseMessage(HttpStatusCode.OK);
+        }
     }
 } 
